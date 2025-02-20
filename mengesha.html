@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>menelik</title>
+    <link rel="stylesheet" href="peoples.css">
+</head>
+<body>
+    <div><a href="./">
+        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0 0 50 50">
+        <path d="M 25 1.0507812 C 24.7825 1.0507812 24.565859 1.1197656 24.380859 1.2597656 L 1.3808594 19.210938 C 0.95085938 19.550938 0.8709375 20.179141 1.2109375 20.619141 C 1.5509375 21.049141 2.1791406 21.129062 2.6191406 20.789062 L 4 19.710938 L 4 46 C 4 46.55 4.45 47 5 47 L 19 47 L 19 29 L 31 29 L 31 47 L 45 47 C 45.55 47 46 46.55 46 46 L 46 19.710938 L 47.380859 20.789062 C 47.570859 20.929063 47.78 21 48 21 C 48.3 21 48.589063 20.869141 48.789062 20.619141 C 49.129063 20.179141 49.049141 19.550938 48.619141 19.210938 L 25.619141 1.2597656 C 25.434141 1.1197656 25.2175 1.0507812 25 1.0507812 z M 35 5 L 35 6.0507812 L 41 10.730469 L 41 5 L 35 5 z"></path>
+    </svg></a></div>
+    <div class="people">
+        <img src="./assets/Ras Mengesha Yohanse.png" >
+        <div>
+        <h1>Ras Mengesha Yohannes</h1>
+        <p id="text"></p>
+    </div>
+</div>
+<script>
+    const text = "Ras Mengesha Yohannes, one of the most heroic figures in Ethiopian military history, played a crucial role in the Battle of Adwa in 1896. As a military leader and a strategic mastermind, his contributions were vital to Ethiopia’s victory over the invading Italian forces and the preservation of the nation’s sovereignty.Mengesha Yohannes was the son of Emperor Yohannes IV, and he held the title of Ras (a high-ranking noble, roughly equivalent to a general). He was known for his military experience, fierce loyalty to the Ethiopian cause, and his ability to rally soldiers from his province, Tigray, to fight against the Italian invasion. His leadership was critical in mobilizing large numbers of troops from northern Ethiopia, and his troops played an essential role in the Ethiopian army’s decisive victory at Adwa One of Mengesha’s heroic moments came before the battle, during the early stages of the conflict, when he was entrusted with organizing and preparing Ethiopian forces. He helped ensure the military readiness of his troops and coordinated their movement to the battlefield. His soldiers, known for their loyalty and discipline, were instrumental in providing the backbone of the Ethiopian army that would ultimately defeat the Italians.At the Battle of Adwa itself, Mengesha’s role was decisive. His forces, positioned on the strategic high ground of the battlefield, played a critical part in the Ethiopian victory. Mengesha’s leadership on the front lines demonstrated his military acumen and courage. His forces engaged the Italians with precision and determination, and their attack, along with the combined efforts of other Ethiopian commanders, led to the overwhelming defeat of the Italian forces. Mengesha’s presence in the battle, commanding his troops with great skill, ensured that the Italians were pushed back decisively.Mengesha Yohannes also played an essential role in organizing the Ethiopian forces into a unified and cohesive army, working closely with Menelik II and other key leaders such as Empress Taytu and Ras Bitwaddad Aba. His ability to maintain discipline, inspire his troops, and effectively communicate strategies made him one of the most respected military leaders in Ethiopian history.After the victory, Mengesha’s heroism continued to be celebrated. His role in the Battle of Adwa was integral to Ethiopia’s resistance against colonialism and ensured the country’s continued independence at a time when most of Africa was being colonized. Ras Mengesha Yohannes’ contributions to the Battle of Adwa made him a national hero, and his legacy remains as one of the most significant figures in Ethiopia’s proud history of resisting foreign occupation.";
+    let index = 0;
+
+    function typeeffect() {
+        if (index < text.length) {
+            document.getElementById("text").innerHTML += text.charAt(index);
+            index++;
+            setTimeout(typeeffect, 45);
+        }
+    }
+
+    typeeffect();
+</script>
+</body>
+</html>
