@@ -1,0 +1,43 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    box-sizing: border-box;
+  }
+.people{
+    display: flex;
+    flex-direction: row;
+    margin-top: 10% ;
+    background-color: #fff;
+    box-shadow: 0 2px 5px black;
+    border-radius:25px;
+    margin: 10px;
+    margin-top:10%;
+}
+p{
+    margin: 20px;
+    color: black;
+    font-size: 1em;
+    font-family: tinos;
+}
+img{
+    border-radius: 20px;
+}
+h1{ 
+    margin:15px;
+    font-family: naod;
+}
+svg{
+    padding:20px;
+}
+@font-face {
+    font-family: naod;
+    src: url(BlackOpsOne-Regular.ttf);
+  }
+  @font-face {
+    font-family: tinos;
+    src: url(Tinos-BoldItalic.ttf);
+  }
+  
