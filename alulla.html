@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>menelik</title>
+    <link rel="stylesheet" href="peoples.css">
+</head>
+<body>
+    <div><a href="./">
+        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0 0 50 50">
+        <path d="M 25 1.0507812 C 24.7825 1.0507812 24.565859 1.1197656 24.380859 1.2597656 L 1.3808594 19.210938 C 0.95085938 19.550938 0.8709375 20.179141 1.2109375 20.619141 C 1.5509375 21.049141 2.1791406 21.129062 2.6191406 20.789062 L 4 19.710938 L 4 46 C 4 46.55 4.45 47 5 47 L 19 47 L 19 29 L 31 29 L 31 47 L 45 47 C 45.55 47 46 46.55 46 46 L 46 19.710938 L 47.380859 20.789062 C 47.570859 20.929063 47.78 21 48 21 C 48.3 21 48.589063 20.869141 48.789062 20.619141 C 49.129063 20.179141 49.049141 19.550938 48.619141 19.210938 L 25.619141 1.2597656 C 25.434141 1.1197656 25.2175 1.0507812 25 1.0507812 z M 35 5 L 35 6.0507812 L 41 10.730469 L 41 5 L 35 5 z"></path>
+    </svg></a></div>
+    <div class="people">
+        <img src="./assets/Ras Alula Engida.png" >
+        <div>
+        <h1>Ras Alula Engida</h1>
+        <p id="text"></p>
+    </div>
+</div>
+<script>
+    const text = "Ras Alula Engida is regarded as one of Ethiopia's greatest military leaders and heroes, particularly known for his strategic brilliance and vital role in the Battle of Adwa in 1896. A key figure in Ethiopia’s successful resistance against Italian colonial forces, Ras Alula was instrumental in preserving Ethiopia’s independence during a time when European powers were aggressively carving up Africa.Alula Engida was born in the early 19th century in the region of Tigray. He rose through the ranks to become a trusted general and one of the closest military advisors to Emperor Menelik II. His leadership skills, military tactics, and courage on the battlefield earned him a place among the most respected figures in Ethiopian history. His loyalty to Menelik II and Ethiopia was unwavering, and he became a symbol of resistance against foreign invasion.Before the Battle of Adwa, Ras Alula played a crucial role in the preparation of Ethiopian forces. He was appointed as the commander of the northern Ethiopian army and worked tirelessly to ensure that the forces under his command were well-prepared, disciplined, and strategically positioned. His military expertise was key in organizing and coordinating the movements of various regional forces to unite them against the Italian invaders.During the Battle of Adwa, Ras Alula's tactical genius was on full display. He commanded the forces that engaged the Italian troops on the southern front, contributing significantly to the Ethiopian victory. One of his major accomplishments during the battle was his ability to exploit the terrain to Ethiopia’s advantage, using the hills and mountains to launch devastating attacks on the Italian forces. His troops, known for their discipline and dedication, fought fiercely and were instrumental in breaking the Italian lines.Ras Alula’s heroic actions extended beyond the battle itself. After the Italians suffered a major defeat at Adwa, Ras Alula pursued the retreating Italian forces and ensured that they were completely defeated. His ability to maintain the momentum of the victory and decisively break the Italian resolve made him a key figure in Ethiopia's ultimate success in resisting colonial rule.His actions during the Battle of Adwa not only contributed to the preservation of Ethiopia’s independence but also had a lasting impact on African resistance to colonization. Ras Alula Engida’s military prowess and leadership left an indelible mark on Ethiopian and African history, making him a national hero and a symbol of courage, patriotism, and strategic genius.";
+    let index = 0;
+
+    function typeeffect() {
+        if (index < text.length) {
+            document.getElementById("text").innerHTML += text.charAt(index);
+            index++;
+            setTimeout(typeeffect, 15);
+        }
+    }
+
+    typeeffect();
+</script>
+</body>
+</html>
